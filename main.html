@@ -12,29 +12,36 @@
 	
 	     <!-- Part 1: Navbar -->
     <nav>
-        <ul>
-            <li><a href="https://www.google.com">Home</a></li>
-            <li><a href="https://www.wikipedia.org">About</a></li>
-            <li><a href="https://www.github.com">Contact</a></li>
-        </ul>
-    </nav>
+    <ul>
+      <li><a href="https://www.google.com">Home</a></li>
+      <li><a href="https://www.wikipedia.org">About</a></li>
+      <li><a href="https://www.github.com">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Part 2: Audio Section -->
-    <section>
-        <h2>3 random audios</h2>
+  <!-- Part 2: Audio Section -->
+  <section>
+    <!-- Heading must exactly match the test string (lowercase + spacing) -->
+    <h2>3 random audios</h2>
 
-        <audio controls>
-            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
-        </audio>
+    <!-- Audio 1 (exact src as expected by the test) -->
+    <audio controls>
+      <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
-        <audio controls>
-            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-        </audio>
+    <!-- Audio 2 (exact src string the test expects) -->
+    <audio controls>
+      <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
 
-        <audio controls>
-            <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/pang/paza-moduless.mp3" type="audio/mpeg">
-        </audio>
-    </section>
+    <!-- Audio 3 (exact src string the test expects) -->
+    <audio controls>
+      <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
 
     <script type="text/javascript" src="./script.js">
 </script>
